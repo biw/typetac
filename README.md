@@ -4,9 +4,9 @@ TypeTac is a typescript library for tachyons. You may already know the [benefits
 
 The benefits of TypeTac are:
 
- - **Type Checking**, no need to wonder if the class name you want is valid, typescript will throw an error if not
- - **Autocomplete**, use your favorite typescript editor to autocomplete definitions
- - **Documentation** - alongside autocomplete, get full documentation in your text editor about *all* tachyons class names
+- **Type Checking**, no need to wonder if the class name you want is valid, typescript will throw an error if not
+- **Autocomplete**, use your favorite typescript editor to autocomplete definitions
+- **Documentation** - alongside autocomplete, get full documentation in your text editor about *all* tachyons class names
 
 All of this comes with a tiny footprint of only {insert small gzip size here} 🕺
 
@@ -14,9 +14,11 @@ still working on this, but here is the basic API:
 
 ```tsx
 import { tac } from 'typetac'
-// no need for anything special from typetac, if you want to compose classnames, use a string base lib
-import cn from 'classname' 
+import cn from 'classname'
 import React from 'react'
+
+// you'll still need to import tachyons like normal
+import 'tachyons'
 
 // the nice thing is there is no way to get anything but a string back
 // when calling tac()
@@ -24,14 +26,18 @@ const name = tac(t => t.ma1.pa1)
 
 console.log(name) // 'ma1 pa1'
 
-// we add other classes using the npm classname library
+// if you want to compose class names, use a string base lib like
+// classname, no need for anything special from typetac
 const otherClasses = cn(tac(t => t.ma1.pa1), 'class1', 'class2')
-,
+
 console.log(otherClasses) // 'ma1 pa1 class1 class2'
 
 // with React
 const Comp = () => <div className={tac(t => t.ma1.pa1.br2)} />
 ```
+
+
+## Old API
 
 here is the old API, keeping it here as a reference:
 
@@ -52,3 +58,7 @@ console.log(otherClasses) // 'ma1 pa1 class1 class2'
 // with React
 const Comp = () => <div className={withTachyons(tac.ma1.pa1.br2)} />
 ```
+
+## License
+
+MIT © [Ben Williams](https://biwills.com)
