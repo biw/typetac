@@ -1,6 +1,6 @@
 {
   "name": "typetac",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "tachyons in typescript",
   "main": "index.ts",
   "repository": "https://github.com/biw/typetac",
