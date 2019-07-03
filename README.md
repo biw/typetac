@@ -1,4 +1,14 @@
-# typetac - tachyons in typescript
+# TypeTac - Tachyons in TypeScript
+
+TypeTac is a typescript library for tachyons. You may already know the [benefits of tachyons](https://github.com/tachyons-css/tachyons/issues/12#issuecomment-59828967).
+
+The benefits of TypeTac are:
+
+ - **Type Checking**, no need to wonder if the class name you want is valid, typescript will throw an error if not
+ - **Autocomplete**, use your favorite typescript editor to autocomplete definitions
+ - **Documentation** - alongside autocomplete, get full documentation in your text editor about *all* tachyons class names
+
+All of this comes with a tiny footprint of only {insert small gzip size here} 🕺
 
 still working on this, but here is the basic API:
 
