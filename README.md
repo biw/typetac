@@ -1,8 +1,31 @@
 # typetac - tachyons in typescript
 
-still working on this, but here is the basic API
+still working on this, but here is the basic API:
 
-```ts
+```tsx
+import { tac } from 'typetac'
+// no need for anything special from typetac, if you want to compose classnames, use a string base lib
+import cn from 'classname' 
+import React from 'react'
+
+// the nice thing is there is no way to get anything but a string back
+// when calling tac()
+const name = tac(t => t.ma1.pa1)
+
+console.log(name) // 'ma1 pa1'
+
+// we add other classes using the npm classname library
+const otherClasses = cn(tac(t => t.ma1.pa1), 'class1', 'class2')
+,
+console.log(otherClasses) // 'ma1 pa1 class1 class2'
+
+// with React
+const Comp = () => <div className={tac(t => t.ma1.pa1.br2)} />
+```
+
+here is the old API, keeping it here as a reference:
+
+```tsx
 import { tac, withTachyons } from 'typetac'
 import React from 'react'
 

@@ -34,14 +34,8 @@ class Tac {
   }
 }
 
-export const tac = new Tac('')
-export const withTachyons = (tac: Tac, otherClasses?: string[]) => {
-  let finalString = tac.toString()
-  if (otherClasses) {
-    otherClasses.forEach(cl => {
-      finalString += ` ${cl}`
-    })
-  }
+export const tac = (inputFunc: (t: Tac) => Tac): string => {
+  const results = inputFunc(new Tac(''))
 
-  return finalString.trim()
+  return results.toString()
 }
