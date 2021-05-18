@@ -1,5 +1,4 @@
-import cn from 'classnames'
-import { tac } from '..'
+import tac from '..'
 
 test('blank get', () => {
   expect(tac).toBe(tac)
@@ -11,10 +10,6 @@ test('single get', () => {
 
 test('double get', () => {
   expect(tac(t => t.ma1.ma2)).toBe('ma1 ma2')
-})
-
-test('double get with other class', () => {
-  expect(cn(tac(t => t.ma1.ma2), 'otherClass')).toBe('ma1 ma2 otherClass')
 })
 
 test('triple get', () => {
@@ -45,14 +40,6 @@ test('double use of single triple object', () => {
   expect(testObject).toBe('ma1 ma2 ma3')
 })
 
-test('double use of single triple object with others', () => {
-  const testObject = tac(t => t.ma1.ma2.ma3)
-
-  // try to use it twice
-  expect(cn(testObject, 'others')).toBe('ma1 ma2 ma3 others')
-  expect(cn(testObject, 'others')).toBe('ma1 ma2 ma3 others')
-})
-
 test('double use of tayon', () => {
   const testObject1 = tac(t => t.ma2.ma1)
   const testObject2 = tac(t => t.ma1)
@@ -65,5 +52,5 @@ test('compose two tachyons', () => {
   const testOb1 = tac(t => t.ma1)
   const testOb2 = tac(t => t.ma2)
 
-  expect(cn(testOb1, testOb2)).toBe('ma1 ma2')
+  expect(`${testOb1} ${testOb2}`).toBe('ma1 ma2')
 })
