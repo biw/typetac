@@ -1,6 +1,6 @@
 {
   "name": "typetac",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Tachyons in TypeScript",
   "main": "dist/typetac.cjs.js",
   "module": "dist/typetac.esm.js",
