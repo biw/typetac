@@ -3,6 +3,7 @@
 [![Build Status][build-badge]][build]
 [![twitter][twitter-badge]][twitter]
 [![version][version-badge]][package]
+[![bundlephobia][bundlephobia-badge]][bundlephobia]
 [![MIT License][license-badge]][license]
 
 TypeTac is a TypeScript library for Tachyons. There are many [benefits of Tachyons](https://github.com/tachyons-css/tachyons/issues/12#issuecomment-59828967), but the goal is to "Create fast loading, highly readable, and 100% responsive interfaces with as little css as possible."
@@ -56,3 +57,5 @@ MIT © [Ben Williams](https://biwills.com)
 [license]: https://github.com/biw/typetac/blob/master/LICENSE
 [twitter-badge]: https://img.shields.io/twitter/follow/biwills.svg?style=flat-square&logo=twitter&label=Follow
 [twitter]: https://twitter.com/biwills
+[bundlephobia]: https://bundlephobia.com/result?p=typetac
+[bundlephobia-badge]: https://img.shields.io/bundlephobia/minzip/typetac?style=flat-square
