@@ -2,27 +2,45 @@
   "name": "typetac",
   "version": "0.1.1",
   "description": "Tachyons in TypeScript",
-  "main": "src/index.ts",
+  "main": "dist/typetac.cjs.js",
+  "module": "dist/typetac.esm.js",
+  "browser": "dist/typetac.min.js",
+  "types": "dist/typetac.d.ts",
   "repository": "https://github.com/biw/typetac",
+  "bugs": {
+    "url": "https://github.com/aidenybai/lucia/issues"
+  },
   "author": "Ben Williams <ben@biwills.com>",
   "license": "MIT",
   "files": [
-    "lib/**/*"
+    "dist"
   ],
+  "exports": {
+    "require": "./dist/typetac.cjs.js",
+    "import": "./dist/typetac.esm.js",
+    "node": "./dist/typetac.cjs.js",
+    "default": "./dist/typetac.cjs.js"
+  },
   "scripts": {
     "_base_lint": "yarn eslint --config \".eslintrc.js\" ",
     "ci:lint": "yarn _base_lint \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "lint": "yarn _base_lint \"src/**/*.{ts,tsx,js,jsx,json,md}\" --fix",
     "precommit-lint": "yarn _base_lint --fix",
     "test": "jest",
-    "build": "tsc",
-    "prepare": "yarn build",
-    "np": "np"
+    "build": "rollup -c",
+    "prepare": "yarn build"
   },
   "devDependencies": {
+    "@rollup/plugin-beep": "^0.2.0",
+    "@rollup/plugin-commonjs": "19.0.0",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "11.2.0",
+    "@rollup/plugin-strip": "^2.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "@wessberg/rollup-plugin-ts": "^1.3.14",
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -35,6 +53,11 @@
     "np": "^7.5.0",
     "prettier": "^2.3.0",
     "react": "^17.0.2",
+    "rollup": "^2.48.0",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^26.5.6",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"

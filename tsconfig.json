@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "target": "es2015", // Compatible with older browser
-    "module": "commonjs", // Compatible with both Node.js and browser
+    "module": "es2015", // Compatible with both Node.js and browser
     "moduleResolution": "node", // Tell tsc to look in node_modules for modules
     "sourceMap": true, // Creates *.js.map files
     "strict": true, // Strict types, eg. prohibits `var x=0; x=null`
     "alwaysStrict": true, // Enable JavaScript's "use strict" mode
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "./lib"
+    "outDir": "./dist"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/__tests__/*"]
