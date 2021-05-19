@@ -12,18 +12,22 @@ interface Padding {
   pa3: this
 }
 
-type Tac = Margins & Padding
+type Tac = Margins & Padding & string
 
-const tac = (inputFunc: (t: Tac) => Tac): string => {
-  let stringValue = ''
-  const proxy = new Proxy(({} as any) as Tac, {
-    get: (_, prop, _this) => {
-      stringValue += ` ${prop.toString()}`
-      return _this
+const createTac = (startingString: string): Tac => {
+  return new Proxy(String as any, {
+    get: (_, prop) => {
+      if (prop === Symbol.toPrimitive) return () => startingString.trim() // called by react and console.log
+      if (prop === Symbol.toStringTag) return () => startingString.trim()
+      if (prop === 'toJSON') return () => startingString.trim()
+      if (prop === 'call') return () => {}
+      if (prop === 'name') return startingString.trim()
+      if (startingString[prop as any]) return startingString[prop as any]
+      return createTac(`${startingString} ${prop.toString()}`)
     },
   })
-  inputFunc(proxy)
-  return stringValue.trim()
 }
+
+const tac = createTac('')
 
 export default tac

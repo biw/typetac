@@ -21,21 +21,27 @@ import React from 'react'
 // you'll still need to import tachyons like normal
 import 'tachyons'
 
-// tac gives you t which has all the tachyons types
-const name = tac(t => t.ma1.pa1)
+// tac is an object with tachyons types
+const name = tac.ma1.pa1
 
-console.log(name) // 'ma1 pa1'
+// but you can treat it as a string at any point in the call chain
+console.log(tac) // ''
+console.log(tac.ma1) // 'ma1'
+console.log(tac.ma1.pa1) // 'ma1 pa1'
+console.log(tac.ma1.pa1.br2) // 'ma1 pa1 br2'
 
-// if you want to compose other class names, it's easy
-const otherClasses = `${tac(t => t.ma1.pa1)} class1 class2`
 
-console.log(otherClasses) // 'ma1 pa1 class1 class2'
-
-// with React
+// which makes Tachyons in React a breeze
 const Comp = () => (
-    <div className={tac(t => t.ma1.pa1.br2)}>
-        <div className={otherClasses} />
-    </div>
+  <div className={tac.ma1.pa1.br2}>
+    {/* if you want to compose other class names, it's easy */
+    <div className={`${tac.ma1.pa1} class1 class2`} />
+  </div>
+
+// and easy to use without a framework
+const element = document.createElement('div')
+element.className = tac.ma1.pa1.br2
+document.appendChild(element)
 ```
 
 ## License
