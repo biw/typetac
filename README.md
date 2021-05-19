@@ -10,9 +10,9 @@ TypeTac is a TypeScript library for Tachyons. There are many [benefits of Tachyo
 
 The benefits of TypeTac are:
 
-- **Type Checking**, no need to wonder if the class name you want is valid, typescript will throw an error if not
-- **Autocomplete**, use your favorite typescript editor to autocomplete definitions
-- **Documentation** - alongside autocomplete, get full documentation in your text editor about _all_ tachyons class names
+- **Type Checking** — no need to wonder if the class name you want is valid, typescript will throw an error if not
+- **Autocomplete** — use your favorite typescript editor to autocomplete definitions
+- **Documentation** — alongside autocomplete, get full documentation in your text editor about _all_ tachyons class names
 
 This comes with a tiny footprint of **only 186 Bytes**
 
@@ -31,13 +31,13 @@ console.log(tac.ma1) // 'ma1'
 console.log(tac.ma1.pa1) // 'ma1 pa1'
 console.log(tac.ma1.pa1.br2) // 'ma1 pa1 br2'
 
-
 // which makes Tachyons in React a breeze
 const Comp = () => (
   <div className={tac.ma1.pa1.br2}>
-    {/* if you want to compose other class names, it's easy */
+    {/* if you want to compose other class names, it's easy */}
     <div className={`${tac.ma1.pa1} class1 class2`} />
   </div>
+)
 
 // and easy to use without a framework
 const element = document.createElement('div')
