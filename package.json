@@ -5,7 +5,7 @@
   "main": "dist/typetac.cjs.js",
   "module": "dist/typetac.esm.js",
   "browser": "dist/typetac.min.js",
-  "types": "dist/typetac.d.ts",
+  "types": "dist/typetac.esm.d.ts",
   "repository": "https://github.com/biw/typetac",
   "bugs": {
     "url": "https://github.com/aidenybai/lucia/issues"
