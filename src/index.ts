@@ -1,18 +1,18 @@
-interface Margins {
-  /** margins 1 */
-  ma1: this
-  ma2: this
-  ma3: this
-}
+import type { Spacing } from './docs/layout/spacing'
+import type { Float } from './docs/layout/float'
+import { Debug } from './docs/layout/debug'
+import { DebugGrid } from './docs/layout/debug-grid'
+import { Flex } from './docs/layout/flex'
 
-interface Padding {
-  /** padding 1 */
-  pa1: this
-  pa2: this
-  pa3: this
-}
-
-type Tac = Margins & Padding & string
+type Tac = Spacing &
+  Float &
+  Debug &
+  DebugGrid &
+  Flex &
+  string &
+  string &
+  string &
+  string
 
 const createTac = (startingString: string): Tac => {
   return new Proxy(String as any, {

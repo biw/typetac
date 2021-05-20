@@ -10,7 +10,7 @@ const primExpect = (s: string) => expect(`${s}`)
 const testType = (x: string) => {}
 
 test('blank get', () => {
-  testType(tac)
+  testType(tac.ma1.ma0)
   testType(tac.pa1.pa2.pa3.pa1)
   primExpect(tac).toBe('')
 })
