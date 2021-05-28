@@ -28,6 +28,7 @@
     "precommit-lint": "yarn _base_lint --fix",
     "test": "jest",
     "build": "rollup -c",
+    "build:docs": "ts-node src/docs/_generateDocs/generateDocs.ts",
     "prepare": "yarn build"
   },
   "devDependencies": {

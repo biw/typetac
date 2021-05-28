@@ -14,9 +14,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa0-ns': this
+ 'pa0-2ns': this
 /**
  * **p**: padding
  *
@@ -52,9 +52,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa1-ns': this
+ 'pa1-2ns': this
 /**
  * **p**: padding
  *
@@ -90,9 +90,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa2-ns': this
+ 'pa2-2ns': this
 /**
  * **p**: padding
  *
@@ -128,9 +128,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa3-ns': this
+ 'pa3-2ns': this
 /**
  * **p**: padding
  *
@@ -166,9 +166,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa4-ns': this
+ 'pa4-2ns': this
 /**
  * **p**: padding
  *
@@ -204,9 +204,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa5-ns': this
+ 'pa5-2ns': this
 /**
  * **p**: padding
  *
@@ -242,9 +242,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa6-ns': this
+ 'pa6-2ns': this
 /**
  * **p**: padding
  *
@@ -280,9 +280,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pa7-ns': this
+ 'pa7-2ns': this
 /**
  * **p**: padding
  *
@@ -318,9 +318,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph0-ns': this
+ 'ph0-2ns': this
 /**
  * **p**: padding
  *
@@ -356,9 +356,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph1-ns': this
+ 'ph1-2ns': this
 /**
  * **p**: padding
  *
@@ -394,9 +394,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph2-ns': this
+ 'ph2-2ns': this
 /**
  * **p**: padding
  *
@@ -432,9 +432,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph3-ns': this
+ 'ph3-2ns': this
 /**
  * **p**: padding
  *
@@ -470,9 +470,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph4-ns': this
+ 'ph4-2ns': this
 /**
  * **p**: padding
  *
@@ -508,9 +508,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph5-ns': this
+ 'ph5-2ns': this
 /**
  * **p**: padding
  *
@@ -546,9 +546,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph6-ns': this
+ 'ph6-2ns': this
 /**
  * **p**: padding
  *
@@ -584,9 +584,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ph7-ns': this
+ 'ph7-2ns': this
 /**
  * **p**: padding
  *
@@ -622,9 +622,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv0-ns': this
+ 'pv0-2ns': this
 /**
  * **p**: padding
  *
@@ -660,9 +660,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv1-ns': this
+ 'pv1-2ns': this
 /**
  * **p**: padding
  *
@@ -698,9 +698,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv2-ns': this
+ 'pv2-2ns': this
 /**
  * **p**: padding
  *
@@ -736,9 +736,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv3-ns': this
+ 'pv3-2ns': this
 /**
  * **p**: padding
  *
@@ -774,9 +774,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv4-ns': this
+ 'pv4-2ns': this
 /**
  * **p**: padding
  *
@@ -812,9 +812,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv5-ns': this
+ 'pv5-2ns': this
 /**
  * **p**: padding
  *
@@ -850,9 +850,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv6-ns': this
+ 'pv6-2ns': this
 /**
  * **p**: padding
  *
@@ -888,9 +888,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pv7-ns': this
+ 'pv7-2ns': this
 /**
  * **p**: padding
  *
@@ -926,9 +926,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt0-ns': this
+ 'pt0-2ns': this
 /**
  * **p**: padding
  *
@@ -964,9 +964,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt1-ns': this
+ 'pt1-2ns': this
 /**
  * **p**: padding
  *
@@ -1002,9 +1002,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt2-ns': this
+ 'pt2-2ns': this
 /**
  * **p**: padding
  *
@@ -1040,9 +1040,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt3-ns': this
+ 'pt3-2ns': this
 /**
  * **p**: padding
  *
@@ -1078,9 +1078,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt4-ns': this
+ 'pt4-2ns': this
 /**
  * **p**: padding
  *
@@ -1116,9 +1116,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt5-ns': this
+ 'pt5-2ns': this
 /**
  * **p**: padding
  *
@@ -1154,9 +1154,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt6-ns': this
+ 'pt6-2ns': this
 /**
  * **p**: padding
  *
@@ -1192,9 +1192,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pt7-ns': this
+ 'pt7-2ns': this
 /**
  * **p**: padding
  *
@@ -1230,9 +1230,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr0-ns': this
+ 'pr0-2ns': this
 /**
  * **p**: padding
  *
@@ -1268,9 +1268,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr1-ns': this
+ 'pr1-2ns': this
 /**
  * **p**: padding
  *
@@ -1306,9 +1306,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr2-ns': this
+ 'pr2-2ns': this
 /**
  * **p**: padding
  *
@@ -1344,9 +1344,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr3-ns': this
+ 'pr3-2ns': this
 /**
  * **p**: padding
  *
@@ -1382,9 +1382,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr4-ns': this
+ 'pr4-2ns': this
 /**
  * **p**: padding
  *
@@ -1420,9 +1420,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr5-ns': this
+ 'pr5-2ns': this
 /**
  * **p**: padding
  *
@@ -1458,9 +1458,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr6-ns': this
+ 'pr6-2ns': this
 /**
  * **p**: padding
  *
@@ -1496,9 +1496,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pr7-ns': this
+ 'pr7-2ns': this
 /**
  * **p**: padding
  *
@@ -1534,9 +1534,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb0-ns': this
+ 'pb0-2ns': this
 /**
  * **p**: padding
  *
@@ -1572,9 +1572,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb1-ns': this
+ 'pb1-2ns': this
 /**
  * **p**: padding
  *
@@ -1610,9 +1610,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb2-ns': this
+ 'pb2-2ns': this
 /**
  * **p**: padding
  *
@@ -1648,9 +1648,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb3-ns': this
+ 'pb3-2ns': this
 /**
  * **p**: padding
  *
@@ -1686,9 +1686,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb4-ns': this
+ 'pb4-2ns': this
 /**
  * **p**: padding
  *
@@ -1724,9 +1724,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb5-ns': this
+ 'pb5-2ns': this
 /**
  * **p**: padding
  *
@@ -1762,9 +1762,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb6-ns': this
+ 'pb6-2ns': this
 /**
  * **p**: padding
  *
@@ -1800,9 +1800,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pb7-ns': this
+ 'pb7-2ns': this
 /**
  * **p**: padding
  *
@@ -1838,9 +1838,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl0-ns': this
+ 'pl0-2ns': this
 /**
  * **p**: padding
  *
@@ -1876,9 +1876,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl1-ns': this
+ 'pl1-2ns': this
 /**
  * **p**: padding
  *
@@ -1914,9 +1914,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl2-ns': this
+ 'pl2-2ns': this
 /**
  * **p**: padding
  *
@@ -1952,9 +1952,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl3-ns': this
+ 'pl3-2ns': this
 /**
  * **p**: padding
  *
@@ -1990,9 +1990,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl4-ns': this
+ 'pl4-2ns': this
 /**
  * **p**: padding
  *
@@ -2028,9 +2028,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl5-ns': this
+ 'pl5-2ns': this
 /**
  * **p**: padding
  *
@@ -2066,9 +2066,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl6-ns': this
+ 'pl6-2ns': this
 /**
  * **p**: padding
  *
@@ -2104,9 +2104,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'pl7-ns': this
+ 'pl7-2ns': this
 /**
  * **p**: padding
  *
@@ -2142,9 +2142,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma0-ns': this
+ 'ma0-2ns': this
 /**
  * **m**: margin
  *
@@ -2180,9 +2180,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma1-ns': this
+ 'ma1-2ns': this
 /**
  * **m**: margin
  *
@@ -2218,9 +2218,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma2-ns': this
+ 'ma2-2ns': this
 /**
  * **m**: margin
  *
@@ -2256,9 +2256,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma3-ns': this
+ 'ma3-2ns': this
 /**
  * **m**: margin
  *
@@ -2294,9 +2294,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma4-ns': this
+ 'ma4-2ns': this
 /**
  * **m**: margin
  *
@@ -2332,9 +2332,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma5-ns': this
+ 'ma5-2ns': this
 /**
  * **m**: margin
  *
@@ -2370,9 +2370,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma6-ns': this
+ 'ma6-2ns': this
 /**
  * **m**: margin
  *
@@ -2408,9 +2408,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ma7-ns': this
+ 'ma7-2ns': this
 /**
  * **m**: margin
  *
@@ -2446,9 +2446,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh0-ns': this
+ 'mh0-2ns': this
 /**
  * **m**: margin
  *
@@ -2484,9 +2484,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh1-ns': this
+ 'mh1-2ns': this
 /**
  * **m**: margin
  *
@@ -2522,9 +2522,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh2-ns': this
+ 'mh2-2ns': this
 /**
  * **m**: margin
  *
@@ -2560,9 +2560,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh3-ns': this
+ 'mh3-2ns': this
 /**
  * **m**: margin
  *
@@ -2598,9 +2598,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh4-ns': this
+ 'mh4-2ns': this
 /**
  * **m**: margin
  *
@@ -2636,9 +2636,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh5-ns': this
+ 'mh5-2ns': this
 /**
  * **m**: margin
  *
@@ -2674,9 +2674,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh6-ns': this
+ 'mh6-2ns': this
 /**
  * **m**: margin
  *
@@ -2712,9 +2712,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mh7-ns': this
+ 'mh7-2ns': this
 /**
  * **m**: margin
  *
@@ -2750,9 +2750,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv0-ns': this
+ 'mv0-2ns': this
 /**
  * **m**: margin
  *
@@ -2788,9 +2788,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv1-ns': this
+ 'mv1-2ns': this
 /**
  * **m**: margin
  *
@@ -2826,9 +2826,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv2-ns': this
+ 'mv2-2ns': this
 /**
  * **m**: margin
  *
@@ -2864,9 +2864,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv3-ns': this
+ 'mv3-2ns': this
 /**
  * **m**: margin
  *
@@ -2902,9 +2902,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv4-ns': this
+ 'mv4-2ns': this
 /**
  * **m**: margin
  *
@@ -2940,9 +2940,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv5-ns': this
+ 'mv5-2ns': this
 /**
  * **m**: margin
  *
@@ -2978,9 +2978,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv6-ns': this
+ 'mv6-2ns': this
 /**
  * **m**: margin
  *
@@ -3016,9 +3016,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mv7-ns': this
+ 'mv7-2ns': this
 /**
  * **m**: margin
  *
@@ -3054,9 +3054,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt0-ns': this
+ 'mt0-2ns': this
 /**
  * **m**: margin
  *
@@ -3092,9 +3092,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt1-ns': this
+ 'mt1-2ns': this
 /**
  * **m**: margin
  *
@@ -3130,9 +3130,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt2-ns': this
+ 'mt2-2ns': this
 /**
  * **m**: margin
  *
@@ -3168,9 +3168,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt3-ns': this
+ 'mt3-2ns': this
 /**
  * **m**: margin
  *
@@ -3206,9 +3206,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt4-ns': this
+ 'mt4-2ns': this
 /**
  * **m**: margin
  *
@@ -3244,9 +3244,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt5-ns': this
+ 'mt5-2ns': this
 /**
  * **m**: margin
  *
@@ -3282,9 +3282,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt6-ns': this
+ 'mt6-2ns': this
 /**
  * **m**: margin
  *
@@ -3320,9 +3320,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mt7-ns': this
+ 'mt7-2ns': this
 /**
  * **m**: margin
  *
@@ -3358,9 +3358,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr0-ns': this
+ 'mr0-2ns': this
 /**
  * **m**: margin
  *
@@ -3396,9 +3396,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr1-ns': this
+ 'mr1-2ns': this
 /**
  * **m**: margin
  *
@@ -3434,9 +3434,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr2-ns': this
+ 'mr2-2ns': this
 /**
  * **m**: margin
  *
@@ -3472,9 +3472,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr3-ns': this
+ 'mr3-2ns': this
 /**
  * **m**: margin
  *
@@ -3510,9 +3510,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr4-ns': this
+ 'mr4-2ns': this
 /**
  * **m**: margin
  *
@@ -3548,9 +3548,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr5-ns': this
+ 'mr5-2ns': this
 /**
  * **m**: margin
  *
@@ -3586,9 +3586,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr6-ns': this
+ 'mr6-2ns': this
 /**
  * **m**: margin
  *
@@ -3624,9 +3624,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mr7-ns': this
+ 'mr7-2ns': this
 /**
  * **m**: margin
  *
@@ -3662,9 +3662,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb0-ns': this
+ 'mb0-2ns': this
 /**
  * **m**: margin
  *
@@ -3700,9 +3700,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb1-ns': this
+ 'mb1-2ns': this
 /**
  * **m**: margin
  *
@@ -3738,9 +3738,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb2-ns': this
+ 'mb2-2ns': this
 /**
  * **m**: margin
  *
@@ -3776,9 +3776,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb3-ns': this
+ 'mb3-2ns': this
 /**
  * **m**: margin
  *
@@ -3814,9 +3814,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb4-ns': this
+ 'mb4-2ns': this
 /**
  * **m**: margin
  *
@@ -3852,9 +3852,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb5-ns': this
+ 'mb5-2ns': this
 /**
  * **m**: margin
  *
@@ -3890,9 +3890,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb6-ns': this
+ 'mb6-2ns': this
 /**
  * **m**: margin
  *
@@ -3928,9 +3928,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'mb7-ns': this
+ 'mb7-2ns': this
 /**
  * **m**: margin
  *
@@ -3966,9 +3966,9 @@ export interface Spacing {
  * 
  * **0**: none
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml0-ns': this
+ 'ml0-2ns': this
 /**
  * **m**: margin
  *
@@ -4004,9 +4004,9 @@ export interface Spacing {
  * 
  * **1**: 1st step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml1-ns': this
+ 'ml1-2ns': this
 /**
  * **m**: margin
  *
@@ -4042,9 +4042,9 @@ export interface Spacing {
  * 
  * **2**: 2nd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml2-ns': this
+ 'ml2-2ns': this
 /**
  * **m**: margin
  *
@@ -4080,9 +4080,9 @@ export interface Spacing {
  * 
  * **3**: 3rd step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml3-ns': this
+ 'ml3-2ns': this
 /**
  * **m**: margin
  *
@@ -4118,9 +4118,9 @@ export interface Spacing {
  * 
  * **4**: 4th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml4-ns': this
+ 'ml4-2ns': this
 /**
  * **m**: margin
  *
@@ -4156,9 +4156,9 @@ export interface Spacing {
  * 
  * **5**: 5th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml5-ns': this
+ 'ml5-2ns': this
 /**
  * **m**: margin
  *
@@ -4194,9 +4194,9 @@ export interface Spacing {
  * 
  * **6**: 6th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml6-ns': this
+ 'ml6-2ns': this
 /**
  * **m**: margin
  *
@@ -4232,9 +4232,9 @@ export interface Spacing {
  * 
  * **7**: 7th step in spacing scale
  *
- * **-ns**: not-small
+ * **-2ns**: not-small
  **/ 
- 'ml7-ns': this
+ 'ml7-2ns': this
 /**
  * **m**: margin
  *

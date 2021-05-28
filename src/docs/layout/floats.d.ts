@@ -1,64 +1,34 @@
-export interface Float {
+export interface Floats {
 /**
  * **f**: float
  *
- * **n**: none
+ * **r**: right
  **/ 
- 'fn': this
+ 'fr': this
 /**
  * **f**: float
  *
- * **n**: none
+ * **r**: right
  *
  * **-ns**: not-small
  **/ 
- 'fn-ns': this
+ 'fr-ns': this
 /**
  * **f**: float
  *
- * **n**: none
+ * **r**: right
  *
  * **-m**: medium
  **/ 
- 'fn-m': this
+ 'fr-m': this
 /**
  * **f**: float
  *
- * **n**: none
+ * **r**: right
  *
  * **-l**: large
  **/ 
- 'fn-l': this
-/**
- * **f**: float
- *
- * **t**: top
- **/ 
- 'ft': this
-/**
- * **f**: float
- *
- * **t**: top
- *
- * **-ns**: not-small
- **/ 
- 'ft-ns': this
-/**
- * **f**: float
- *
- * **t**: top
- *
- * **-m**: medium
- **/ 
- 'ft-m': this
-/**
- * **f**: float
- *
- * **t**: top
- *
- * **-l**: large
- **/ 
- 'ft-l': this
+ 'fr-l': this
 /**
  * **f**: float
  *
@@ -89,4 +59,34 @@ export interface Float {
  * **-l**: large
  **/ 
  'fl-l': this
+/**
+ * **f**: float
+ *
+ * **n**: none
+ **/ 
+ 'fn': this
+/**
+ * **f**: float
+ *
+ * **n**: none
+ *
+ * **-ns**: not-small
+ **/ 
+ 'fn-ns': this
+/**
+ * **f**: float
+ *
+ * **n**: none
+ *
+ * **-m**: medium
+ **/ 
+ 'fn-m': this
+/**
+ * **f**: float
+ *
+ * **n**: none
+ *
+ * **-l**: large
+ **/ 
+ 'fn-l': this
 }

@@ -1,18 +1,23 @@
 import type { Spacing } from './docs/layout/spacing'
-import type { Float } from './docs/layout/float'
+import type { Floats } from './docs/layout/floats'
 import { Debug } from './docs/layout/debug'
 import { DebugGrid } from './docs/layout/debug-grid'
 import { Flex } from './docs/layout/flex'
+import { ClearFix } from './docs/layout/clear-fix'
 
-type Tac = Spacing &
-  Float &
-  Debug &
+type Tac =
+  // elements
+
+  //layout
   DebugGrid &
-  Flex &
-  string &
-  string &
-  string &
-  string
+    Debug &
+    Flex &
+    Spacing &
+    Floats &
+    ClearFix &
+    // theming
+    string
+// typeography
 
 const createTac = (startingString: string): Tac => {
   return new Proxy(String as any, {

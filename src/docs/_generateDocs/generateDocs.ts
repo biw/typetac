@@ -1,11 +1,21 @@
-import { spacing, float, flex, Data } from './layout'
+import { layout } from './layout'
+
+export interface Data {
+  interfaceName: string
+  folder: 'layout'
+  base: string[]
+  modifier: string[]
+  size: string[]
+  mediaQuery: string[]
+}
 
 const fs = require('fs')
 
-const genFile = (data: Data) => {
+const genFile = (data: Data | null) => {
+  if (!data) return
   console.log(`started generating: ${data.interfaceName}`)
 
-  const directory = '' //'./docs/layout/'
+  const directory = `${process.cwd()}/src/docs/${data.folder}/`
   const logger = fs.createWriteStream(
     `${directory}${data.interfaceName.toLowerCase()}.d.ts`,
   )
@@ -53,7 +63,10 @@ const genFile = (data: Data) => {
   logger.end()
   console.log(`finished generating: ${data.interfaceName.toLowerCase()}.d.ts`)
 }
+const genSetOfFiles = (fileSet: typeof layout) => {
+  ;(Object.keys(fileSet) as any as (keyof typeof fileSet)[]).forEach((key) => {
+    genFile(layout[key])
+  })
+}
 
-genFile(float)
-genFile(spacing)
-genFile(flex)
+genSetOfFiles(layout)
