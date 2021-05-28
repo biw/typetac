@@ -5,6 +5,7 @@ export interface Data {
   base: string[]
   modifier: string[]
   size: string[]
+  extraOutsideClasses?: string[]
   mediaQuery: string[]
 }
 
