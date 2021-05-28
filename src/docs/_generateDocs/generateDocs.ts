@@ -1,8 +1,7 @@
-import { layout } from './layout'
+import { allCSSFiles } from './allCSSFiles'
 
 export interface Data {
   interfaceName: string
-  folder: 'layout'
   base: string[]
   modifier: string[]
   size: string[]
@@ -15,7 +14,7 @@ const genFile = (data: Data | null) => {
   if (!data) return
   console.log(`started generating: ${data.interfaceName}`)
 
-  const directory = `${process.cwd()}/src/docs/${data.folder}/`
+  const directory = `${process.cwd()}/src/docs/allFiles/`
   const logger = fs.createWriteStream(
     `${directory}${data.interfaceName.toLowerCase()}.d.ts`,
   )
@@ -63,10 +62,9 @@ const genFile = (data: Data | null) => {
   logger.end()
   console.log(`finished generating: ${data.interfaceName.toLowerCase()}.d.ts`)
 }
-const genSetOfFiles = (fileSet: typeof layout) => {
-  ;(Object.keys(fileSet) as any as (keyof typeof fileSet)[]).forEach((key) => {
-    genFile(layout[key])
-  })
-}
 
-genSetOfFiles(layout)
+;(Object.keys(allCSSFiles) as any as (keyof typeof allCSSFiles)[]).forEach(
+  (key) => {
+    genFile(allCSSFiles[key])
+  },
+)
