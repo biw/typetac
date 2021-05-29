@@ -14,7 +14,7 @@ The benefits of TypeTac are:
 - **Autocomplete** — use your favorite typescript editor to autocomplete definitions
 - **Documentation** — alongside autocomplete, get full documentation in your text editor about _all_ tachyons class names
 
-This comes with a tiny footprint of **only 258 Bytes**
+This comes with a tiny footprint of **only 327 Bytes**
 
 ```tsx
 import tac from 'typetac'
