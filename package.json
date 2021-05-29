@@ -16,7 +16,7 @@
   "scripts": {
     "lint": "yarn eslint 'src/**/*.{ts,js}'",
     "test": "jest",
-    "build": "rm -r dist && tsc --emitDeclarationOnly --outDir dist && node esbuild.js",
+    "build": "rm -rf dist && tsc --emitDeclarationOnly --outDir dist && node esbuild.js",
     "gen-docs": "ts-node src/genDocs.ts",
     "prepare": "yarn build"
   },
