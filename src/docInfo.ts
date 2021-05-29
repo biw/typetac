@@ -1,4 +1,4 @@
-import { Data } from './generateDocs'
+import { Data } from './buildDocs'
 
 /** from https://github.com/tachyons-css/tachyons/tree/main/src */
 type cssFilenames =
@@ -468,14 +468,14 @@ export const allCSSFiles: { [k in cssFilenames]: Data | null } = {
   '_letter-spacing.css': {
     interfaceName: 'LetterSpacing',
     base: ['tracked', 'tracked-tight', 'tracked-mega'],
-    modifier: [],
+    modifier: [''],
     size: [''],
     mediaQuery: ['', '-ns = not-small', '-m  = medium', '-l  = large'],
   },
   '_line-height.css': {
     interfaceName: 'LineHeight',
     base: ['lh-solid', 'lh-title', 'lh-copy'],
-    modifier: [],
+    modifier: [''],
     size: [''],
     mediaQuery: ['', '-ns = not-small', '-m  = medium', '-l  = large'],
   },
@@ -569,7 +569,7 @@ export const allCSSFiles: { [k in cssFilenames]: Data | null } = {
   '_outlines.css': {
     interfaceName: 'Outlines',
     base: ['outline', 'outline-transparent', 'outline-0'],
-    modifier: [],
+    modifier: [''],
     size: [''],
     mediaQuery: ['', '-ns = not-small', '-m  = medium', '-l  = large'],
   },
@@ -589,7 +589,7 @@ export const allCSSFiles: { [k in cssFilenames]: Data | null } = {
       'overflow-y-scroll',
       'overflow-y-auto',
     ],
-    modifier: [],
+    modifier: [''],
     size: [''],
     mediaQuery: ['', '-ns = not-small', '-m  = medium', '-l  = large'],
   },
@@ -897,7 +897,7 @@ export const allCSSFiles: { [k in cssFilenames]: Data | null } = {
       'stripe-light',
       'stripe-dark',
     ],
-    modifier: [],
+    modifier: [''],
     size: [''],
     mediaQuery: [''],
   },
@@ -1018,7 +1018,7 @@ export const allCSSFiles: { [k in cssFilenames]: Data | null } = {
   '_word-break.css': {
     interfaceName: 'WordBreak',
     base: ['word-normal', 'word-wrap', 'word-nowrap'],
-    modifier: [],
+    modifier: [''],
     size: [''],
     mediaQuery: ['', '-ns = not-small', '-m  = medium', '-l  = large'],
   },

@@ -1,4 +1,4 @@
-import { allCSSFiles } from './allCSSFiles'
+import { allCSSFiles } from './docInfo'
 
 export interface Data {
   interfaceName: string
@@ -14,16 +14,55 @@ const camelToDashCase = (str: string) =>
 
 const fs = require('fs')
 
-const genFile = (data: Data | null) => {
-  if (!data) return
-  console.log(`started generating: ${data.interfaceName}`)
+interface ExportFileData {
+  interfaceName: string
+  filename: string
+}
 
-  const filename = `${camelToDashCase(data.interfaceName).substr(1)}.d.ts`
+const genExportFile = (data: ExportFileData[]) => {
+  console.log('started generating: Docs')
 
-  const directory = `${process.cwd()}/src/docs/allFiles/`
+  const filename = 'docs.d.ts'
+  const directory = `${process.cwd()}/src/docs/`
   if (!fs.existsSync(directory)) fs.mkdirSync(directory)
 
   const logger = fs.createWriteStream(directory + filename)
+
+  data.forEach((i) => {
+    logger.write(`import { ${i.interfaceName} } from './${i.filename}'\n`)
+  })
+
+  logger.write(`\nexport type Docs =\n`)
+
+  data.forEach((i) => {
+    logger.write(`  & ${i.interfaceName}\n`)
+  })
+
+  logger.end()
+  console.log(`finished generating: ${filename}`)
+}
+
+const genFile = (data: Data | null): ExportFileData | null => {
+  if (!data) return null
+  console.log(`started generating: ${data.interfaceName}`)
+
+  const filename = `${camelToDashCase(data.interfaceName).substr(1)}`
+  const fileExtension = '.d.ts'
+
+  const directory = `${process.cwd()}/src/docs/`
+
+  if (!fs.existsSync(directory)) fs.mkdirSync(directory)
+
+  if (
+    !data.base.length ||
+    !data.mediaQuery.length ||
+    !data.modifier.length ||
+    !data.size.length
+  ) {
+    throw new Error(`could not build ${data.interfaceName} invalid data`)
+  }
+
+  const logger = fs.createWriteStream(directory + filename + fileExtension)
 
   logger.write(`export interface ${data.interfaceName} {\n`)
 
@@ -81,14 +120,22 @@ const genFile = (data: Data | null) => {
 
   logger.write(`}\n`)
   logger.end()
-  console.log(`finished generating: ${filename}`)
+  console.log(`finished generating: ${filename + fileExtension}`)
+  return {
+    filename,
+    interfaceName: data.interfaceName,
+  }
 }
 
 const hitKeys = new Set<string>()
+const exportData: ExportFileData[] = []
 ;(Object.keys(allCSSFiles) as any as (keyof typeof allCSSFiles)[]).forEach(
   (key) => {
     if (hitKeys.has(key)) throw new Error(`dup key ${key}`)
     hitKeys.add(key)
-    genFile(allCSSFiles[key])
+    const res = genFile(allCSSFiles[key])
+    if (res) exportData.push(res)
   },
 )
+
+genExportFile(exportData)

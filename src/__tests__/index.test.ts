@@ -10,13 +10,17 @@ const primExpect = (s: string) => expect(`${s}`)
 const testType = (x: string) => {}
 
 test('blank get', () => {
-  testType(tac.ma1.ma0)
+  testType(tac.ma1.ma0['left-1-ns'])
   testType(tac.pa1.pa2.pa3.pa1)
   primExpect(tac).toBe('')
 })
 
 test('single get', () => {
   primExpect(tac.ma1).toBe('ma1')
+})
+
+test('single string lookup', () => {
+  primExpect(tac['left--1']).toBe('left--1')
 })
 
 test('double get', () => {
