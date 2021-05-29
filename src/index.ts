@@ -1,41 +1,21 @@
-/* eslint no-console: 0 */
+import type { Docs } from './docs/docs'
 
-class Tac {
-  /** Ma1 is margin   1 */
-  public ma1!: this
-  public ma2!: this
-  public ma3!: this
-  private stringRep: string
-  public constructor(stringInput: string) {
-    this.stringRep = stringInput
-    this.addClassNames(['ma1', 'ma2', 'ma3'])
-  }
+type Tac = Docs & string
 
-  public toString = () => this.stringRep.trim()
-
-  private addClassNames = (names: string[]) => {
-    names.forEach(name => {
-      this.addProperty(name, () => {
-        return new Tac(`${this.stringRep} ${name}`)
-      })
-    })
-  }
-
-  private addProperty = (name: string, getter: () => any) => {
-    Object.defineProperty(this, name, {
-      get: function propertyGetter() {
-        const result = getter.call(this)
-        if (result !== undefined) {
-          return result
-        }
-      },
-      configurable: true,
-    })
-  }
+const createTac = (startingString: string): Tac => {
+  return new Proxy(String as any, {
+    get: (_, prop) => {
+      if (prop === Symbol.toPrimitive) return () => startingString.trim() // called by react and console.log
+      if (prop === Symbol.toStringTag) return () => startingString.trim()
+      if (prop === 'toJSON') return () => startingString.trim()
+      if (prop === 'call') return () => {}
+      if (prop === 'name') return startingString.trim()
+      if (startingString[prop as any]) return startingString[prop as any]
+      return createTac(`${startingString} ${prop.toString()}`)
+    },
+  })
 }
 
-export const tac = (inputFunc: (t: Tac) => Tac): string => {
-  const results = inputFunc(new Tac(''))
+const tac = createTac('')
 
-  return results.toString()
-}
+export default tac
