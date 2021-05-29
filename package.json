@@ -2,10 +2,9 @@
   "name": "typetac",
   "version": "0.2.1",
   "description": "Tachyons in TypeScript",
-  "main": "dist/typetac.cjs.js",
-  "module": "dist/typetac.esm.js",
+  "main": "dist/typetac.js",
   "browser": "dist/typetac.min.js",
-  "types": "dist/typetac.esm.d.ts",
+  "types": "dist/typetac.d.ts",
   "repository": "https://github.com/biw/typetac",
   "bugs": {
     "url": "https://github.com/biw/typetac/issues"
@@ -16,34 +15,29 @@
     "dist"
   ],
   "exports": {
-    "require": "./dist/typetac.cjs.js",
-    "import": "./dist/typetac.esm.js",
-    "node": "./dist/typetac.cjs.js",
-    "default": "./dist/typetac.cjs.js"
+    "require": "./dist/typetac.js",
+    "import": "./dist/typetac.js",
+    "node": "./dist/typetac.js",
+    "default": "./dist/typetac.js"
   },
   "scripts": {
     "lint": "yarn eslint 'src/**/*.{ts,js}'",
     "test": "jest",
-    "build": "rollup -c && yarn build:docs dist",
-    "build:docs": "ts-node src/buildDocs.ts",
+    "build": "tsc --emitDeclarationOnly --outDir dist && node esbuild.js",
+    "gen-docs": "ts-node src/genDocs.ts",
     "prepare": "yarn build"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "19.0.0",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
-    "@wessberg/rollup-plugin-ts": "^1.3.14",
+    "esbuild": "^0.12.5",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.3",
     "prettier": "^2.3.0",
-    "rollup": "^2.50.4",
-    "rollup-plugin-cleanup": "^3.2.1",
-    "rollup-plugin-filesize": "^9.1.1",
-    "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.0.1",
     "ts-node": "^10.0.0",
     "tslib": "^2.2.0",

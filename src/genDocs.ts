@@ -5,10 +5,7 @@ const camelToDashCase = (str: string) =>
 
 const fs = require('fs')
 
-const directory =
-  process.argv?.[2] === 'dist'
-    ? `${process.cwd()}/dist/docs/`
-    : `${process.cwd()}/src/docs/`
+const directory = `${process.cwd()}/src/docs/`
 
 console.log('building in directory:', directory)
 

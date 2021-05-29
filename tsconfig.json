@@ -8,6 +8,8 @@
     "alwaysStrict": true, // Enable JavaScript's "use strict" mode
     "esModuleInterop": true,
     "declaration": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist"
   },
