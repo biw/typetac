@@ -7,6 +7,7 @@ import tac from '..'
 const primExpect = (s: string) => expect(`${s}`)
 
 /** make sure tac is viewed as a string by TypeScript */
+// eslint-disable-next-line no-unused-vars
 const testType = (x: string) => {}
 
 test('blank get', () => {

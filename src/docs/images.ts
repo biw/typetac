@@ -1,6 +1,6 @@
 export interface Images {
-/**
-* **img**
-**/
-'img': this
+  /**
+   * **img**
+   **/
+  'img': this
 }

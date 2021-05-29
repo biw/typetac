@@ -1,6 +1,6 @@
 export interface Lists {
-/**
-* **list**
-**/
-'list': this
+  /**
+   * **list**
+   **/
+  'list': this
 }

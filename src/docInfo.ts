@@ -69,6 +69,7 @@ type cssFilenames =
   | '_word-break.css'
   | '_z-index.css'
 
+// eslint-disable-next-line no-unused-vars
 export const allCSSFiles: { [k in cssFilenames]: Data | null } = {
   '_aspect-ratios.css': {
     interfaceName: 'AspectRatios',

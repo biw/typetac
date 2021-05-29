@@ -1,6 +1,6 @@
 export interface Links {
-/**
-* **link**
-**/
-'link': this
+  /**
+   * **link**
+   **/
+  'link': this
 }

@@ -1,6 +1,6 @@
 export interface Code {
-/**
-* **pre**
-**/
-'pre': this
+  /**
+   * **pre**
+   **/
+  'pre': this
 }

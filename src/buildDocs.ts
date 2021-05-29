@@ -73,28 +73,28 @@ const genFile = (data: Data | null): ExportFileData | null => {
     const size = _size.split('=').map((i) => i.trim())
     const mediaQuery = _mediaQuery.split('=').map((i) => i.trim())
 
-    logger.write(`/**
-* ${base.length === 2 ? `**${base[0]}**: ${base[1]}` : `**${base[0]}**`}${
+    logger.write(`  /**
+   * ${base.length === 2 ? `**${base[0]}**: ${base[1]}` : `**${base[0]}**`}${
       modifier.length === 2
         ? `
-*
-* **${modifier[0]}**: ${modifier[1]}`
+   *
+   * **${modifier[0]}**: ${modifier[1]}`
         : ''
     }${
       size.length === 2
         ? `
-*
-* **${size[0]}**: ${size[1]}`
+   *
+   * **${size[0]}**: ${size[1]}`
         : ''
     }${
       mediaQuery.length === 2
         ? `
-*
-* **${mediaQuery[0]}**: ${mediaQuery[1]}`
+   *
+   * **${mediaQuery[0]}**: ${mediaQuery[1]}`
         : ''
     }
-**/
-'${base[0]}${modifier[0]}${size[0]}${mediaQuery[0]}': this
+   **/
+  '${base[0]}${modifier[0]}${size[0]}${mediaQuery[0]}': this
 `)
   }
 
