@@ -3,8 +3,7 @@
   "version": "0.2.2",
   "description": "Tachyons in TypeScript",
   "main": "dist/typetac.js",
-  "browser": "dist/typetac.min.js",
-  "types": "dist/typetac.d.ts",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/biw/typetac",
   "bugs": {
     "url": "https://github.com/biw/typetac/issues"
