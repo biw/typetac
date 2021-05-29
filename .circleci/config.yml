@@ -14,8 +14,11 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run:
-          name: Run tests
+          name: Run Tests
           command: yarn test
+      - run:
+          name: Run TypeScript Type Checking
+          command: yarn tsc --project tsconfig.json
 
 workflows:
   main:
