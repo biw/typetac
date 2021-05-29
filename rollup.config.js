@@ -1,4 +1,5 @@
 import commonjs from '@rollup/plugin-commonjs'
+import cleanup from 'rollup-plugin-cleanup'
 import { terser } from 'rollup-plugin-terser'
 import filesize from 'rollup-plugin-filesize'
 import ts from '@wessberg/rollup-plugin-ts'
@@ -9,7 +10,12 @@ export const build = (config) => {
   return {
     input: config.input,
     external: [],
-    plugins: [...config.plugins, ts(), commonjs()],
+    plugins: [
+      ...config.plugins,
+      ts(),
+      commonjs(),
+      cleanup({ comments: 'none', extensions: ['ts'] }),
+    ],
     output: [
       {
         file: config.output,

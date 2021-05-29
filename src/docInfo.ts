@@ -1,4 +1,11 @@
-import { Data } from './buildDocs'
+export interface Data {
+  interfaceName: string
+  base: string[]
+  modifier: string[]
+  size: string[]
+  extraOutsideClasses?: string[]
+  mediaQuery: string[]
+}
 
 /** from https://github.com/tachyons-css/tachyons/tree/main/src */
 type cssFilenames =

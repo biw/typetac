@@ -1,18 +1,16 @@
-import { allCSSFiles } from './docInfo'
-
-export interface Data {
-  interfaceName: string
-  base: string[]
-  modifier: string[]
-  size: string[]
-  extraOutsideClasses?: string[]
-  mediaQuery: string[]
-}
+import { allCSSFiles, Data } from './docInfo'
 
 const camelToDashCase = (str: string) =>
   str.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)
 
 const fs = require('fs')
+
+const directory =
+  process.argv?.[2] === 'dist'
+    ? `${process.cwd()}/dist/docs/`
+    : `${process.cwd()}/src/docs/`
+
+console.log('building in directory:', directory)
 
 interface ExportFileData {
   interfaceName: string
@@ -22,8 +20,8 @@ interface ExportFileData {
 const genExportFile = (data: ExportFileData[]) => {
   console.log('started generating: Docs')
 
-  const filename = 'docs.d.ts'
-  const directory = `${process.cwd()}/src/docs/`
+  const filename = 'docs.ts'
+
   if (!fs.existsSync(directory)) fs.mkdirSync(directory)
 
   const logger = fs.createWriteStream(directory + filename)
@@ -47,9 +45,7 @@ const genFile = (data: Data | null): ExportFileData | null => {
   console.log(`started generating: ${data.interfaceName}`)
 
   const filename = `${camelToDashCase(data.interfaceName).substr(1)}`
-  const fileExtension = '.d.ts'
-
-  const directory = `${process.cwd()}/src/docs/`
+  const fileExtension = '.ts'
 
   if (!fs.existsSync(directory)) fs.mkdirSync(directory)
 
