@@ -13,12 +13,6 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    "require": "./dist/typetac.js",
-    "import": "./dist/typetac.js",
-    "node": "./dist/typetac.js",
-    "default": "./dist/typetac.js"
-  },
   "scripts": {
     "lint": "yarn eslint 'src/**/*.{ts,js}'",
     "test": "jest",
