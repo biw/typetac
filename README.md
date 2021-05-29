@@ -58,4 +58,4 @@ MIT © [Ben Williams](https://biwills.com)
 [twitter-badge]: https://img.shields.io/twitter/follow/biwills.svg?style=flat-square&logo=twitter&label=Follow
 [twitter]: https://twitter.com/biwills
 [bundlephobia]: https://bundlephobia.com/result?p=typetac
-[bundlephobia-badge]: https://img.shields.io/bundlephobia/minzip/typetac?style=flat-square
+[bundlephobia-badge]: https://img.shields.io/bundlephobia/minzip/typetac@latest?style=flat-square
