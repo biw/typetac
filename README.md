@@ -1,10 +1,8 @@
 # TypeTac - Tachyons in TypeScript
 
-[![Build Status][build-badge]][build]
-[![twitter][twitter-badge]][twitter]
-[![version][version-badge]][package]
-[![bundlephobia][bundlephobia-badge]][bundlephobia]
-[![MIT License][license-badge]][license]
+[![CI](https://github.com/biw/typetac/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/biw/typetac/actions/workflows/ci.yml)
+[![npm version](https://badgen.net/npm/v/typetac)](https://www.npmjs.com/package/typetac)
+[![npm downloads](https://badgen.net/npm/dt/typetac)](https://www.npmjs.com/package/typetac)
 
 TypeTac is a TypeScript library for Tachyons. There are many [benefits of Tachyons](https://github.com/tachyons-css/tachyons/issues/12#issuecomment-59828967), but the goal is to "Create fast loading, highly readable, and 100% responsive interfaces with as little css as possible."
 
@@ -14,7 +12,7 @@ The benefits of TypeTac are:
 - **Autocomplete** — use your favorite typescript editor to autocomplete definitions
 - **Documentation** — alongside autocomplete, get full documentation in your text editor about _all_ tachyons class names
 
-This comes with a tiny footprint of **only 327 Bytes**
+This comes with a tiny footprint of **about 0.2 kB gzipped**
 
 ```tsx
 import tac from 'typetac'
@@ -48,14 +46,3 @@ document.appendChild(element)
 ## License
 
 MIT © [Ben Williams](https://biwills.com)
-
-[build-badge]: https://github.com/biw/typetac/actions/workflows/ci.yml/badge.svg?branch=main
-[build]: https://github.com/biw/typetac/actions/workflows/ci.yml
-[version-badge]: https://img.shields.io/npm/v/typetac.svg?style=flat-square
-[package]: https://www.npmjs.com/package/typetac
-[license-badge]: https://img.shields.io/npm/l/typetac.svg?style=flat-square
-[license]: https://github.com/biw/typetac/blob/master/LICENSE
-[twitter-badge]: https://img.shields.io/twitter/follow/biwills.svg?style=flat-square&logo=twitter&label=Follow
-[twitter]: https://twitter.com/biwills
-[bundlephobia]: https://bundlephobia.com/result?p=typetac
-[bundlephobia-badge]: https://img.shields.io/bundlephobia/minzip/typetac@latest?style=flat-square

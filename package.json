@@ -21,11 +21,21 @@
   "bugs": {
     "url": "https://github.com/biw/typetac/issues"
   },
+  "homepage": "https://github.com/biw/typetac#readme",
   "author": "Ben Williams <ben@biwills.com>",
   "license": "MIT",
+  "keywords": [
+    "tachyons",
+    "typescript",
+    "css",
+    "utility-classes"
+  ],
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "test": "vp test",
     "build": "vp pack",
@@ -37,10 +47,12 @@
     "ts-node": "^10.9.2",
     "tslib": "^2.8.1",
     "typescript": "^7.0.2",
-    "vite-plus": "catalog:"
+    "vite-plus": "0.2.8"
   },
-  "packageManager": "yarn@4.18.0",
-  "resolutions": {
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.8"
+  "packageManager": "pnpm@10.34.5",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@0.2.8"
+    }
   }
 }

@@ -1,4 +1,5 @@
-node_modules
-.vscode
-dist
-.yarn/
+node_modules/
+.vscode/
+dist/
+.context/
+pnpm-debug.log*
