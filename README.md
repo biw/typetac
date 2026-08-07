@@ -49,8 +49,8 @@ document.appendChild(element)
 
 MIT © [Ben Williams](https://biwills.com)
 
-[build-badge]: https://img.shields.io/circleci/build/github/biw/typetac.svg?style=flat-square
-[build]: https://travis-ci.org/biw/typetac
+[build-badge]: https://github.com/biw/typetac/actions/workflows/ci.yml/badge.svg?branch=main
+[build]: https://github.com/biw/typetac/actions/workflows/ci.yml
 [version-badge]: https://img.shields.io/npm/v/typetac.svg?style=flat-square
 [package]: https://www.npmjs.com/package/typetac
 [license-badge]: https://img.shields.io/npm/l/typetac.svg?style=flat-square

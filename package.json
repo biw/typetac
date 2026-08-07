@@ -2,8 +2,21 @@
   "name": "typetac",
   "version": "1.0.0",
   "description": "Tachyons in TypeScript",
-  "main": "dist/typetac.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/typetac.cjs",
+  "module": "./dist/typetac.mjs",
+  "types": "./dist/typetac.d.mts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/typetac.d.mts",
+        "default": "./dist/typetac.mjs"
+      },
+      "require": {
+        "types": "./dist/typetac.d.cts",
+        "default": "./dist/typetac.cjs"
+      }
+    }
+  },
   "repository": "https://github.com/biw/typetac",
   "bugs": {
     "url": "https://github.com/biw/typetac/issues"
@@ -14,27 +27,20 @@
     "dist"
   ],
   "scripts": {
-    "lint": "yarn eslint 'src/**/*.{ts,js}'",
-    "test": "jest",
-    "build": "rm -rf dist && tsc --emitDeclarationOnly --outDir dist && node esbuild.js",
-    "gen-docs": "ts-node src/genDocs.ts",
-    "prepare": "yarn build"
+    "test": "vp test",
+    "build": "vp pack",
+    "gen-docs": "vp exec ts-node src/genDocs.ts",
+    "prepare": "vp pack"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/node": "^15.6.1",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
-    "esbuild": "^0.12.5",
-    "eslint": "^7.27.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "jest": "^27.0.3",
-    "prettier": "^2.3.0",
-    "ts-jest": "^27.0.1",
-    "ts-node": "^10.0.0",
-    "tslib": "^2.2.0",
-    "typescript": "^4.3.2",
-    "yarn": "^1.22.10"
+    "@types/node": "^26.2.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": "^7.0.2",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "yarn@4.18.0",
+  "resolutions": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.8"
   }
 }
