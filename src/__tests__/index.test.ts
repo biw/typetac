@@ -1,6 +1,8 @@
+import { expect, test } from 'vite-plus/test'
+
 import tac from '..'
 
-/** the jest tests use typeof so we need to wrap the tac in a template tag
+/** The Vitest assertions use typeof, so we need to wrap tac in a template tag
  * to pass the correct value to the test. React uses toPrimitive which is also
  * used in the template tag, so they test the same thing
  */
